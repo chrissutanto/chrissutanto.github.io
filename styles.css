@@ -4,10 +4,10 @@ body { margin: 60px auto; width: 90%;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-family: 'Roboto', sans-serif;
-  max-width: 1200px;}
+  max-width: 600px;}
 .column {
   float: left;
-  width: 50%;
+  width: 33.33%;
 }
 #third {
     width: 33.33%;
