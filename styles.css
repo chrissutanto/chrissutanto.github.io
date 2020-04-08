@@ -4,15 +4,21 @@ body { margin: 60px auto; width: 90%;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-family: 'Roboto', sans-serif;
-  max-width: 600px;}
+  max-width: 1200px;}
 .column {
   float: left;
-  width: 33.33%;
+  width: 50%;
 }
-@media screen and (max-width: 600px) {
+#third {
+    width: 33.33%;
+}
+@media screen and (max-width: 800px) {
   .column {
     width: 100%;
   }
+}
+.rmargin{
+    margin-right: 10px;
 }
 .row:after {
   content: "";
