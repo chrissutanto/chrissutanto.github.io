@@ -25,3 +25,9 @@ body { margin: 60px auto; width: 90%;
   display: table;
   clear: both;
 }
+p{
+    line-height: 175%;
+}
+ul{
+    line-height: 175%;
+}
