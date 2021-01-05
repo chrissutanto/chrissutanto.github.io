@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Christopher Sutanto</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Christopher Sutanto">
+        <meta name="author" content="Christopher Sutanto">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    </head>
+    <body>
+        <nav>
+           <ul>
+               <li><a href="/" style="text-decoration: none; color: black">Home</a></li>
+               <li><a href="index.html#projects" style="text-decoration: none; color: black">Projects</a></li>
+               <li><a href="index.html#experience" style="text-decoration: none; color: black">Experience</a></li>
+               <li><a href="index.html#documents" style="text-decoration: none; color: black">Documents</a></li>
+               <li><a href="index.html#contact" style="text-decoration: none; color: black">Contact</a></li>
+           </ul> 
+        </nav>
+        <div class="container">
+            <h1>Christopher Sutanto</h1>
+            <h2>Joystick Keyboard</h2>
+            <center>
+                <img src="images/joystick_wide.png" style="width: 600px; height 180px; border-radius: 10px"/>
+            </center>
+        <h3 id="about">Relevant Skills</h3>
+            <ul>
+                <li>Woodworking</li>
+                <li>CNC Router Running and Toolpath Planning</li>
+                <li>Fusion 360</li>
+                <li>Arduino</li>
+            </ul>
+            
+        <h3 id="about">Why?</h3>    
+            <p>Whether due to the use of thick gloves or arthritis, many people have limited dexterity in their fingers. This can make it difficult to interact with a computer as sufficiently agile fingers are necessary to type on a keyboard. Speech recognition is a completely valid solution, but I always feel silly talking to no one. So, I thought I'd have fun coming up with a novel solution. </p>
+            
+        <h3 id="about">About the Project</h3>
+            <p>To use the joystick keyboard, the user first plugs it into their computer’s USB port. The device acts directly as a keyboard so no additional drivers are necessary. </p>
+            <p>The joystick has eight directions in addition to its center position, which forms something like a 3x3 grid of positions. To input a letter, the joystick is used to “draw” the shape of the letter on the grid. This way, as long as the user knows how to write the alphabet, they will be able to quickly learn all of the combinations that correspond to each letter. The button is used to signal that the combo is ready to translate and send. </p>
+            <p>To enter a space, the joystick is moved to the right, then the button is pressed. To enter a backspace, the same thing is done, but moving the joystick to the left. </p>
+            <center>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/NdhJLQJdWcQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </center>
+            <p>The video above shows me entering a sentence with most of the letters in the alphabet (I mistakenly typed “jumped” instead of “jumps”). This was one of my first tests of the completed device and I believe that a way higher typing speed can be achieved with practice. </p>
+            <p>I implemented the combo recognition in a way where additional movements are unnecessary past the point where the combo is unique to the certain letter. For example, “z” is unique after the first two movements as it starts in the right position and moves diagonally to the down position. This start of the combo is not shared with any other letter, so this simple diagonal movement is all that is needed to register a “z”. Of course, writing out the entire letter will also register a “z”. This opens the door for even faster typing as shortcuts like this can be memorized by savvy users. </p>
+            <p>I wanted to match the aesthetic design of the device to that of my laptop stand project with its unfinished wood and white plastic inlays. I spent way too long cutting the box’s rabbet joints using a pull saw as I didn’t want to shell out the money for the appropriate router bit. However, I did have a round over bit which I used with the hand router to give the box its curved edges. </p>
+            <p>The white inlay panel was cut out of a HDPE cutting board on a CNC router. This gave me a lot more trouble than I expected as the plastic had the tendency to melt and form a glob around the router bit, mashing everywhere and creating a really messy cut. This took a lot of trial and error to solve.</p>
+            <p>Initially, I used compressed air hoping to cool the plastic while cutting. I soon found out that the air actually contributed to the problem as it solidified the molten plastic chunks onto the router bit. It turns out that letting the plastic stay soft allowed it to be flung off of the bit by centrifugal force. Additionally, I doubled the feed rate and split each pass of the initial toolpath into its own separate G-code file. This allowed me to stop the router between each pass and cut off any plastic bits that had stuck on to the router bit. These improvements allowed me to produce acceptable parts. </p>
+            <p>For added pressure and motivation, I decided to set a 2-day deadline for this project. Despite all the problems along the way, I was able to complete the joystick keyboard, start to finish, within the deadline. </p>
+            
+        <h3 id="contact">Contact</h3>
+            <ul style="list-style-type:none;">
+                <li><i class="fas fa-envelope"></i>
+                <a href="mailto:chris.sutanto28@gmail.com" style="text-decoration: none; color: black">&nbsp;&nbsp;&nbsp;chris.sutanto28@gmail.com</a><br></li>
+                <li><i class="fab fa-linkedin"></i>
+            <a href="https://www.linkedin.com/in/christopher-sutanto/" style="text-decoration: none; color: black">&nbsp;&nbsp;&nbsp;christopher-sutanto</a></li>
+            </ul>
+            
+        </div>
+    </body>
+</html>
